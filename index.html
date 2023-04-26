@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CPS Counter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!--<header>
+        <div id="settings">
+            <div id="timer-selection">
+                <label>Timer Duration:</label>
+                <select id="cps-selector"></select>
+            </div>
+        </div>
+    </header> -->
+
+    <header>
+        <p id="title">-~-~- CPS Counter -~--~</p>
+        <p id="subtitle">How fast can you click your mouse?</p>
+    </header>
+
+    <main>
+        <div id="counters">
+            <div class="counter">
+                <p id="timer-text">Timer: <span id="timer">12</span></p>
+            </div>
+            <div class="counter">
+                <p id="clicks-text">Clicks: <b><span id="clicks-done">0</span></b></p>
+            </div>
+        </div>
+
+        <button id="click-button">Click as fast as you can.</button>
+        <button id="reset-button">Reset Timer</button>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+</html>
