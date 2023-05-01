@@ -4,6 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS Counter</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--<header>
@@ -20,19 +24,20 @@
         <p id="subtitle">How fast can you click your mouse?</p>
     </header>
 
-    <main>
-        <div id="counters">
-            <div class="counter">
-                <p id="timer-text">Timer: <span id="timer"></span></p>
-            </div>
-            <div class="counter">
-                <p id="clicks-text">Clicks: <b><span id="clicks-done">0</span></b></p>
-            </div>
+    <div id="counters">
+        <div class="counter">
+            <p id="timer-text">Timer: <span id="timer"></span></p>
         </div>
+        <div class="counter">
+            <p id="clicks-text">Clicks: <b><span id="clicks-done">0</span></b></p>
+        </div>
+    </div>
 
-        <button id="click-button">Click as fast as you can.</button>
+    <div id="control-buttons">
+        <button id="click-button">Click as fast as <br>you can.</button>
         <button id="reset-button">Reset Timer</button>
-    </main>
+    </div>
+    
     
     <script src="index.js"></script>
 </body>
