@@ -17,16 +17,17 @@ body {
 }
 
 header {
-    color: #4CAF50;
     text-align: center;
 }
 
 #title {
+    color: #2FBF71;
     font-family: 'Bruno Ace', cursive;
     font-size: min(11vw, 7rem);
 }
 
 #subtitle {
+    color: #223843;
     font-family: 'Open Sans', sans-serif;
     font-size: min(5vw, 2.5rem);
 }
@@ -38,27 +39,28 @@ header {
 }
 
 .counter > p {
-    border-bottom: 3px solid black;
+    padding-inline: 1rem;
+    border: 3px solid #223843;
     border-radius: 15%;
     font-size: clamp(2rem, 5vh, 4rem);
     text-align: center;
     line-height: 1.5;
 }
 
-#timer {
-    text-decoration-thickness: 2px;
-    text-decoration-line: underline;
+.counter > p {
+    color: #097969;
 }
 
-#timer-text {
-    color: blue;
+#clicks-done {
+    font-weight: bold;
 }
 
 #click-button {
-    background-color: aquamarine;
-    border-color: black;
+    background-color: #32CD32;
+    border-color: gray;
     border-radius: 10%;
-    color: black;
+    border: 7px solid #223843;
+    color: white;
     width: 100%;
     height: 100%;
     font-size: clamp(3rem, 11vw, 4.5rem);
@@ -66,10 +68,12 @@ header {
 }
 
 #reset-button {
-    background-color: yellowgreen;
+    background-color: #2AAA8A;
     border-radius: 10%;
+    border: 3px solid #223843;
     padding: 1rem 2rem;
     font-size: 2rem;
+    color: white;
 }
 
 #control-buttons {
@@ -84,5 +88,9 @@ header {
 @media (width < 600px) {
     #reset-button {
         width: 100%;
+    }
+
+    #counters {
+        flex-direction: column;
     }
 }
