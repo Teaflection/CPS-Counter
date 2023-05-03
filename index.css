@@ -27,7 +27,10 @@ header {
 }
 
 #subtitle {
-    color: #223843;
+    background: linear-gradient(#2FBF71, #223843);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: 'Open Sans', sans-serif;
     font-size: min(5vw, 2.5rem);
 }
