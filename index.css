@@ -88,6 +88,10 @@ header {
     gap: 20px;
 }
 
+button {
+    cursor: pointer;
+}
+
 @media (width < 600px) {
     #reset-button {
         width: 100%;
