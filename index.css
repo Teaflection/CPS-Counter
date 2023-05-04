@@ -1,6 +1,7 @@
 :root {
     --primary-color: #2FBF71;
     --secondary-color: #223843;
+    --border-color: var(--secondary-color);
 }
 
 * {
@@ -49,7 +50,7 @@ header {
 
 .counter > p {
     padding-inline: 1rem;
-    border: 3px solid var(--secondary-color);
+    border: 3px solid var(--border-color);
     border-radius: 15%;
     font-size: clamp(2rem, 5vh, 4rem);
     text-align: center;
@@ -83,7 +84,7 @@ header {
 #reset-button {
     background-color: #2AAA8A;
     border-radius: 10%;
-    border: 3px solid var(--secondary-color);
+    border: 3px solid var(--border-color);
     padding: 1rem 2rem;
     font-size: 2rem;
     color: white;
