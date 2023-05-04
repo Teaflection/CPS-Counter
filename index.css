@@ -70,6 +70,10 @@ header {
     box-shadow: 0 0 5px 5px #223843;
 }
 
+#click-button:active {
+    transform: scale(0.99);
+}
+
 #reset-button {
     background-color: #2AAA8A;
     border-radius: 10%;
