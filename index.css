@@ -51,7 +51,7 @@ header {
 .counter > p {
     padding-inline: 1rem;
     border: 3px solid var(--border-color);
-    border-radius: 15%;
+    border-radius: 25px;
     font-size: clamp(2rem, 5vh, 4rem);
     text-align: center;
     line-height: 1.5;
@@ -67,7 +67,7 @@ header {
 
 #click-button {
     background-color: #32CD32;
-    border-radius: 10%;
+    border-radius: 60px;
     border: none;
     color: white;
     width: 100%;
@@ -83,7 +83,7 @@ header {
 
 #reset-button {
     background-color: #2AAA8A;
-    border-radius: 10%;
+    border-radius: 25px;
     border: 3px solid var(--border-color);
     padding: 1rem 2rem;
     font-size: 2rem;
