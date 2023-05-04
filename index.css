@@ -23,7 +23,7 @@ header {
 #title {
     color: #2FBF71;
     font-family: 'Bruno Ace', cursive;
-    font-size: min(11vw, 7rem);
+    font-size: min(11vw, 6rem);
 }
 
 #subtitle {
