@@ -2,6 +2,8 @@
     --primary-color: #2FBF71;
     --secondary-color: #223843;
     --border-color: var(--secondary-color);
+
+    --primary-font: 'Open Sans', sans-serif;
 }
 
 * {
@@ -21,6 +23,11 @@ body {
     align-items: center;
     justify-content: space-between;
     padding-block: 15px;
+    font-family: var(--primary-font);
+}
+
+button {
+    font-family: inherit;
 }
 
 header {
@@ -38,7 +45,7 @@ header {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--primary-font);
     font-size: min(5vw, 2.5rem);
 }
 
