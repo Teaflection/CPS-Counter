@@ -76,7 +76,7 @@ header {
     height: 100%;
     font-size: clamp(3rem, 11vw, 4.5rem);
     line-height: 1.5;
-    box-shadow: 0 0 5px 4px #000000;
+    box-shadow: 0 0 20px -5px rgba(0,0,0,0.5);
 }
 
 #click-button span {
