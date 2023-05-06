@@ -111,7 +111,7 @@ button {
     }
 
     #counters {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     #click-button:active {
