@@ -130,3 +130,10 @@ button {
         transform: scale(0.90);
     }
 }
+
+@media (hover: hover) {
+
+    #reset-button:hover {
+        background-color: #1ca6a8;
+    }
+}
