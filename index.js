@@ -8,7 +8,6 @@ let timerSeconds = 10;
 
 //timers
 let timerID = null;
-let resetID = null;
 
 clickButton.addEventListener('click', () => 
 {
@@ -47,7 +46,7 @@ function startTimer()
 {
     timerID = window.setInterval(decreaseTimer, 1000);
 
-    resetID = setTimeout(() => 
+    setTimeout(() => 
     {
         alert(`You clicked ${clicksDoneSpan.textContent} times in ${timerSeconds} seconds!`);
         reset();
@@ -57,12 +56,5 @@ function startTimer()
 
 function reset()
 {
-    clearInterval(timerID);
-    clearTimeout(resetID);
-
-    timerID = null;
-    resetID = null;
-
-    resetClicks();
-    resetTimer();
+    location.reload();
 }
