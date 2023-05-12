@@ -2,7 +2,6 @@ const timerSpan = document.getElementById('timer');
 const clicksDoneSpan = document.getElementById('clicks-done');
 const clickButton = document.getElementById('click-button');
 const resetButton = document.getElementById('reset-button');
-//const cpsSelector = document.getElementById("cps-selector");
 
 //settings
 let timerSeconds = 10;
@@ -10,14 +9,6 @@ let timerSeconds = 10;
 //timers
 let timerID = null;
 let resetID = null;
-
-//populateCPSSelector([1, 3, 10, 20, 60], timerSeconds);
-
-/*cpsSelector.addEventListener('change', () => 
-{
-    timerSeconds = parseInt(cpsSelector.value);
-    reset();
-});*/
 
 clickButton.addEventListener('click', () => 
 {
@@ -75,18 +66,4 @@ function reset()
 
     resetSpanNumber(clicksDoneSpan);
     resetTimerSpan();
-}
-
-function populateCPSSelector(options, selectedOption)
-{
-    //add the specified options to the select element
-    for(let option of options)
-    {
-        let suffix = option == 1 ? 'second' : 'seconds';
-
-        cpsSelector.add(new Option(option + ' ' + suffix, option));
-    }
-
-    //set the selected value to the specified option
-    cpsSelector.value = selectedOption;
 }
