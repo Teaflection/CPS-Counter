@@ -12,48 +12,47 @@ let resetID = null;
 
 clickButton.addEventListener('click', () => 
 {
-    increaseSpanNumber(clicksDoneSpan);
+    increaseClicks();
     
     if(timerID == null)
         startTimer();
 });
 
-resetTimerSpan();
+resetTimer();
 
 resetButton.addEventListener('click', reset);
 
 
-function increaseSpanNumber(span)
+function increaseClicks()
 {
-    span.textContent = parseInt(span.textContent)+1
+    clicksDoneSpan.textContent = parseInt(clicksDoneSpan.textContent) +1;
 }
 
-function decreaseSpanNumber(span)
+function decreaseTimer()
 {
-    span.textContent = parseInt(span.textContent)-1
+    timerSpan.textContent = parseInt(timerSpan.textContent) -1;
 }
 
-function resetSpanNumber(span)
+function resetClicks()
 {
-    span.textContent = 0;
+    clicksDoneSpan.textContent = 0;
 }
 
-function resetTimerSpan()
+function resetTimer()
 {
     timerSpan.textContent = timerSeconds.toString();
 }
 
 function startTimer()
 {
-    timerID = window.setInterval(() => decreaseSpanNumber(timerSpan), 1000);
+    timerID = window.setInterval(decreaseTimer, 1000);
 
     resetID = setTimeout(() => 
     {
-        resetSpanNumber(timerSpan);
         alert(`You clicked ${clicksDoneSpan.textContent} times in ${timerSeconds} seconds!`);
         reset();
 
-    }, timerSeconds * 1000)
+    }, timerSeconds * 1000);
 }
 
 function reset()
@@ -64,6 +63,6 @@ function reset()
     timerID = null;
     resetID = null;
 
-    resetSpanNumber(clicksDoneSpan);
-    resetTimerSpan();
+    resetClicks();
+    resetTimer();
 }
